@@ -31,34 +31,26 @@ function Header() {
                     <ul>
                         <li><Link href="/">Quem Somos</Link></li>
                         <li>
-                            <Link href="/">
-                                <a>
-                                    Cursos
-                                    <RiArrowDropDownLine />
-                                    <nav>
-                                        <ul>
-                                            <li><Link href="/">Cursos Técnicos</Link></li>
-                                            <li><Link href="/">Cursos de Capacitação</Link></li>
-                                            <li><Link href="/">Cursos de Aprimoramento</Link></li>
-                                        </ul>
-                                    </nav>
-                                </a>
-                            </Link>
+                            Cursos
+                            <RiArrowDropDownLine />
+                            <nav>
+                                <ul>
+                                    <li><Link href="/">Cursos Técnicos</Link></li>
+                                    <li><Link href="/">Cursos de Capacitação</Link></li>
+                                    <li><Link href="/">Cursos de Aprimoramento</Link></li>
+                                </ul>
+                            </nav>
                         </li>
                         <li>
-                            <Link href="/">
-                                <a>
-                                    Unidades
-                                    <RiArrowDropDownLine />
-                                    <nav>
-                                        <ul>
-                                            <li><Link href="/">Cuiabá</Link></li>
-                                            <li><Link href="/">Londrina</Link></li>
-                                            <li><Link href="/">Montes Claros</Link></li>
-                                        </ul>
-                                    </nav>
-                                </a>
-                            </Link>
+                            Unidades
+                            <RiArrowDropDownLine />
+                            <nav>
+                                <ul>
+                                    <li><Link href="/">Cuiabá</Link></li>
+                                    <li><Link href="/">Londrina</Link></li>
+                                    <li><Link href="/">Montes Claros</Link></li>
+                                </ul>
+                            </nav>
                         </li>
                         <li><Link href="/">Blog</Link></li>
                         <li><Link href="/">Proz Empresas</Link></li>

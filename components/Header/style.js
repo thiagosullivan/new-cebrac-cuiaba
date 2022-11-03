@@ -89,6 +89,9 @@ export const HeaderBottom = styled.div`
                 a {
                     display: flex;
                     align-items: center;
+                    font-family: 'Saira', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.2rem;
                 }
 
                 svg {
@@ -114,6 +117,7 @@ export const HeaderBottom = styled.div`
                     width: max-content;
                     display: none;
                     overflow: hidden;
+                    z-index: 9;
                     
                     ul {
                         display: flex;
@@ -125,6 +129,9 @@ export const HeaderBottom = styled.div`
                             border-bottom: 2px solid ${({theme}) => theme.white};
                             width: 100%;                            
                             margin: 0;
+                            font-family: 'Saira', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.2rem;
 
                             &:last-child {
                                 border-bottom: none;
@@ -132,6 +139,7 @@ export const HeaderBottom = styled.div`
 
                             &:hover {
                                 background-color: ${({ theme }) => darken(0.15, theme.primary)};
+                                color: ${({theme}) => theme.white};
                             }
 
                             a {
@@ -147,7 +155,7 @@ export const HeaderBottom = styled.div`
     @keyframes dropDownAnimation {
         0% {
             opacity: 0;
-            transform: translateY(-200px);
+            transform: translateY(-100px);
         }
         100% {
             opacity: 1;
