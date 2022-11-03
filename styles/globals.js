@@ -48,4 +48,9 @@ export default createGlobalStyle`
     height: 100%;
     overflow-y: hidden;
   }
+  .home__bg {
+    background: url('https://raw.githubusercontent.com/thiagosullivan/new-cebrac-cuiaba/main/assets/bg-2.png');
+    width: 100%;
+    height: 70px;
+  }
 `;
