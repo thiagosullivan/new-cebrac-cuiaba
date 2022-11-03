@@ -1,0 +1,25 @@
+{
+    "cards": [
+        {
+            "title": "Conexão do estudante com o trabalho",
+            "desc": "Mais de 80% dos nossos alunos se empregam na área em até um ano após a conclusão do seu curso."
+        },
+        {
+            "title": "Qualidade do curso",
+            "desc": "Cursos atualizados com foco no que o mercado mais valoriza. Experimentando sua profissão e resolvendo problemas concretos na prática."
+        },
+        {
+            "title": "Reconhecidos pelo MEC",
+            "desc": "Todos os nossos cursos são reconhecidos pelo MEC. Todas as unidades Proz aprovadas pelas Secretarias Estatuais de Educação."
+        },
+        {
+            "title": "Perto de você",
+            "desc": "Bem localizadas e de fácil acesso. Tem sempre uma unidade perto de você."
+        },
+        {
+            "title": "Cabe no bolso",
+            "desc": "Mensalidades que cabem no seu orçamento do começo ao fim do curso."
+        }
+
+    ]
+}
