@@ -12,5 +12,14 @@ export const BannerHeroContainer = styled.section`
     .banner__Hero {
         border-radius: 30px;
         overflow: hidden;
+        max-width: 1098px;
+        width: 100%;
+        height: 592px;
+
+        .banner__hero__img {
+            width: 1098px;
+            height: 592px;
+            position: relative;
+        }
     }
 `;
