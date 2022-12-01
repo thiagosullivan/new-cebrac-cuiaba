@@ -47,7 +47,7 @@ function Header() {
                 </Link>
                 <nav>
                     <ul>
-                        <li><Link href="/">Quem Somos</Link></li>
+                        <li><Link href="/quem-somos">Quem Somos</Link></li>
                         <li>
                             Cursos
                             <RiArrowDropDownLine />

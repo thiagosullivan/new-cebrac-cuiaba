@@ -79,12 +79,17 @@ export const FooterContainer = styled.footer`
                 margin-bottom: 2rem;
                 margin-left: 0;
                 padding-right: 0;
+
+                .header__btn__wpp {
+                    margin-right: 0;
+                }
             }
         }
 
         @media screen and (max-width: 980px){
             flex-direction: column;
             align-items: center;
+            text-align: center;
             
             div {
                 display: flex;

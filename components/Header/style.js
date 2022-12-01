@@ -91,6 +91,11 @@ export const HeaderTop = styled.div`
                     font-size: .8rem;
                 }
             }
+            p {
+                font-size: .7rem;
+                margin-right: 10px;
+                font-weight: 400;
+            }
         }
     }
 `;

@@ -25,7 +25,7 @@ function Footer() {
             <div className='footer__top__col2'>
                 <p>A Proz</p>
                 <div>
-                    <Link href="/">
+                    <Link href="/quem-somos">
                         Quem Somos
                     </Link>
                     <Link href="/blog">
