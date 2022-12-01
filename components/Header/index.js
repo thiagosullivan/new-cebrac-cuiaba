@@ -57,6 +57,15 @@ function Header() {
                                 </ul>
                             </nav>
                         </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/@cebracast"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                CebraCast
+                            </a>
+                        </li>
                         <li><Link href="/blog">Blog</Link></li>
                         {/* <li><Link href="/">Proz Empresas</Link></li>
                         <li><Link href="/">Proz Saúde</Link></li> */}

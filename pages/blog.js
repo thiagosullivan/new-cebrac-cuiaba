@@ -3,9 +3,6 @@ import Header from '../components/Header';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
 
-import { getClient } from '../lib/sanity.server';
-import groq from 'groq';
-
 export default function Blog() {
 
   return (
@@ -23,25 +20,3 @@ export default function Blog() {
     </div>
   )
 }
-
-// export async function getStaticProps({ preview = false }){
-//   const posts = await getClient(preview).fetch(groq`
-//     *[_type == "post" && publishedAt < now()] | order(publishedAt desc) {
-//       _id,
-//       title,
-//       "username": author>username,
-//       "categories": categories[]->{id, title},
-//       "authorImage": author->avatar,
-//       body,
-//       mainImage,
-//       slug,
-//       publishedAt
-//     }
-//   `)
-
-//   return {
-//     props: {
-//       posts,
-//     },
-//   }
-// }
