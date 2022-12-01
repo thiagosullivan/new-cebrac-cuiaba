@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { DepoimentCard, DepoimentsContainer } from './style';
 
-function Depoiments() {
+function Depoiments({depos}) {
   return (
     <DepoimentsContainer>
         <div className='close__title'>
@@ -27,17 +27,17 @@ function Depoiments() {
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
-                {data.map ((depo, index) => {
+                {depos.map ((depo, index) => {
                     return (
                         <SwiperSlide key={index}>
                             <DepoimentCard>
-                                <p>&#8243;{depo.depo}&#8243;</p>
+                                <p>&#8243;{depo.depotxt}&#8243;</p>
                                 <div className='depo__bottom'>
-                                    <h4>{depo.name}</h4>
-                                    <span>{depo.role}</span>
+                                    <h4>{depo.deponame}</h4>
+                                    <span>{depo.deporole}</span>
                                 </div>
                                 <div className='depo__img'>
-                                    <Image src={depo.img} alt={depo.name} layout="fill" />
+                                    <Image src={depo.depoimg.url} alt={depo.deponame} layout="fill" />
                                 </div>
                             </DepoimentCard>
                         </SwiperSlide>

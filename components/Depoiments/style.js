@@ -62,5 +62,9 @@ export const DepoimentCard = styled.div`
         z-index: 2;
         right: -40px;
         top: 75%;
+
+        span {
+            border-radius: 50%;
+        }
     }
 `;
