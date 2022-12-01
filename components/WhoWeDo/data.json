@@ -1,24 +1,28 @@
 {
     "cards": [
         {
-            "title": "Conexão do estudante com o trabalho",
-            "desc": "Mais de 80% dos nossos alunos se empregam na área em até um ano após a conclusão do seu curso."
+            "title": "Conectamos nossos alunos com o emprego",
+            "desc": "O feedback dos nossos alunos mostra que GRANDE parte alcança o emprego em até 6 meses pós a conclusão do seu curso."
         },
         {
-            "title": "Qualidade do curso",
-            "desc": "Cursos atualizados com foco no que o mercado mais valoriza. Experimentando sua profissão e resolvendo problemas concretos na prática."
+            "title": "Com o CEBRAC no currículo é assim:",
+            "desc": "Você mais perto do mercado de trabalho e da realização dos seus sonhos. O CEBRAC conta com educadores especializados e uma metodologia de ensino diferenciada."
         },
         {
-            "title": "Reconhecidos pelo MEC",
-            "desc": "Todos os nossos cursos são reconhecidos pelo MEC. Todas as unidades Proz aprovadas pelas Secretarias Estatuais de Educação."
+            "title": "Reconhecido pelo Mercado",
+            "desc": "O CEBRAC por meio do Projeto Cebrac Empregos conta com mais de 11 mil empresas cadastradas, que APROVAM a formação dos nossos ALUNOS."
         },
         {
-            "title": "Perto de você",
-            "desc": "Bem localizadas e de fácil acesso. Tem sempre uma unidade perto de você."
+            "title": "Fácil Acesso",
+            "desc": "O Cebrac está sempre em local privilegiado e de fácil acesso. Pesquise a sua cidade."
         },
         {
-            "title": "Cabe no bolso",
-            "desc": "Mensalidades que cabem no seu orçamento do começo ao fim do curso."
+            "title": "Os Melhores Cursos",
+            "desc": "O Cebrac já formou milhares de alunos e é a escola mais premiada do Brasil, sendo eleita a melhor escola de cursos por 14 anos consecutivos."
+        },
+        {
+            "title": "Fácil e Acessível",
+            "desc": "No Cebrac você encontra programas especiais que garantem valores acessíveis, que cabem no seu bolso. Inscreva-se para participar dos nossos programas de BENEFÍCIOS."
         }
 
     ]

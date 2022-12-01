@@ -30,7 +30,7 @@ export const WhoWeDoCard = styled.div`
     background-color: ${({theme}) => theme.white};
     border-radius: 20px;
     color: ${({theme}) => theme.primary};
-    max-width: 270px;
+    max-width: 350px;
     width: 100%;
     min-height: 290px;
     display: flex;
@@ -53,6 +53,6 @@ export const WhoWeDoCard = styled.div`
 
     &:last-child {
         background-color: ${({theme}) => theme.secondary};
-        border-radius: 20px 20px 100% 20px;
+        /* border-radius: 20px 20px 100% 20px; */
     }
 `

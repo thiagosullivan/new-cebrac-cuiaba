@@ -18,9 +18,9 @@ function WhoWeDo() {
                         )
                     }
                 )}
-                <WhoWeDoCard>
+                {/* <WhoWeDoCard>
                     
-                </WhoWeDoCard>
+                </WhoWeDoCard> */}
             </WhoWeDoCards>
         </div>
 
