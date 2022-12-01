@@ -71,41 +71,71 @@ export const FooterContainer = styled.footer`
                     border-bottom: 5px solid ${({ theme }) => darken(0.25, theme.green)};
                 }
             }
-        }
-    }
-    .footer__top__col2 {
-            border-right: 4px solid ${({ theme }) => lighten(0.5, theme.primary)};
-            padding-right: 2.5rem;
-            margin-left: 2.5rem;
-
-            p {
-                font-weight: 700;
-                font-family: 'Saira', sans-serif;
-                line-height: 15px;
-                margin-bottom: 1rem;
+            
+            @media screen and (max-width: 980px){
+                border-right: none;
+                border-bottom: 4px solid #cae7fe;
+                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+                margin-left: 0;
+                padding-right: 0;
             }
+        }
+
+        @media screen and (max-width: 980px){
+            flex-direction: column;
+            align-items: center;
+            
             div {
                 display: flex;
                 flex-direction: column;
-                
-                a {
-                    font-family: 'Saira', sans-serif;
-                    transition: all 100ms ease-out;
-
-                    &:hover {
-                        color: ${({ theme }) => lighten(0.3, theme.primary)};
-                    }
-
-                    &:nth-child(3) {
-                        font-weight: 700;
-                        margin-top: 2rem;
-                    };
-                    &:nth-child(4) {
-                        font-weight: 700;
-                        margin-top: .5rem;
-                    };
-                }
+                align-items: center;
             }
+        }
+
+    }
+    .footer__top__col2 {
+        border-right: 4px solid ${({ theme }) => lighten(0.5, theme.primary)};
+        padding-right: 2.5rem;
+        margin-left: 2.5rem;
+
+        p {
+            font-weight: 700;
+            font-family: 'Saira', sans-serif;
+            line-height: 15px;
+            margin-bottom: 1rem;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            
+            a {
+                font-family: 'Saira', sans-serif;
+                transition: all 100ms ease-out;
+
+                &:hover {
+                    color: ${({ theme }) => lighten(0.3, theme.primary)};
+                }
+
+                &:nth-child(3) {
+                    font-weight: 700;
+                    margin-top: 2rem;
+                };
+                &:nth-child(4) {
+                    font-weight: 700;
+                    margin-top: .5rem;
+                };
+            }
+        }
+
+        @media screen and (max-width: 980px){
+            border-right: none;
+            border-bottom: 4px solid #cae7fe;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            margin-left: 0;
+            padding-right: 0;
+        }
     }
     .footer__top__col3 {
         border-right: 4px solid ${({ theme }) => lighten(0.5, theme.primary)};
@@ -137,6 +167,15 @@ export const FooterContainer = styled.footer`
                 margin-top: .5rem;
             };
         }
+
+        @media screen and (max-width: 980px){
+            border-right: none;
+            border-bottom: 4px solid #cae7fe;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            margin-left: 0;
+            padding-right: 0;
+        }
     }
     .footer__top__col4 {
         border-right: 4px solid ${({ theme }) => lighten(0.5, theme.primary)};
@@ -154,6 +193,15 @@ export const FooterContainer = styled.footer`
             &:hover {
                 color: ${({ theme }) => lighten(0.3, theme.primary)};
             }
+        }
+
+        @media screen and (max-width: 980px){
+            border-right: none;
+            border-bottom: 4px solid #cae7fe;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            margin-left: 0;
+            padding-right: 0;
         }
     }
     .footer__top__col5 {
@@ -179,6 +227,19 @@ export const FooterContainer = styled.footer`
 
             &:last-child {
                 margin-right: 0;
+            }
+        }
+
+        @media screen and (max-width: 980px){
+            border-right: none;
+            border-bottom: 4px solid #cae7fe;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            margin-left: 0;
+            padding-right: 0;
+
+            a {
+                margin-right: 0px;
             }
         }
     }

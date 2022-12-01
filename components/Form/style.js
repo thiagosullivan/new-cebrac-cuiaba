@@ -5,7 +5,7 @@ export const FormContainer = styled.section`
     border-radius: 15px;
     background-color: ${({theme}) => theme.secondary};
     max-width: 950px;
-    width: 100%;
+    width: 95%;
     margin: 0 auto 3rem;
     position: relative;
     border-radius: 15px;
@@ -31,7 +31,7 @@ export const FormContent = styled.form`
         display: grid;
         grid-template-areas:
         "name name email email"
-        "tel es unidade unidade"
+        "tel tel unidade unidade"
         "curso curso curso curso";
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -59,20 +59,15 @@ export const FormContent = styled.form`
             }
             &:nth-child(3) {
                 grid-area: tel;
-                max-width: 215px;
+                max-width: 450px;
                 flex: 4;
             }
             &:nth-child(4) {
-                grid-area: es;
-                max-width: 215px;
-                flex: 4;
-            }
-            &:nth-child(5) {
                 grid-area: unidade;
                 flex: 2;
                 max-width: 450px;
             }
-            &:nth-child(6) {
+            &:nth-child(5) {
                 grid-area: curso;
                 flex: 1;
             }
@@ -87,6 +82,23 @@ export const FormContent = styled.form`
                 font-family: 'Saira', sans-serif;
             }
         }
+
+        @media screen and (max-width: 720px){
+            grid-template-areas:
+            "name"
+            "email"
+            "tel"
+            "unidade"
+            "curso";
+            grid-template-columns: 1fr;
+            
+            label {
+                max-width: unset !important;
+                width: 90%;
+                flex: unset !important;
+                margin: 0 auto;
+            }
+        }
     }
     div {
         display: flex;
@@ -98,11 +110,13 @@ export const FormContent = styled.form`
             font-family: 'Saira', sans-serif;
             color: ${({theme}) => theme.white};
             line-height: 15px;
+            width: 100%;
         }
         button {
             grid-area: btn;
             width: 150px;
             height: 60px;
+            margin-left: 1rem;
             border: none;
             border-radius: 10px;
             background-color: ${({theme}) => theme.secondary};
@@ -114,6 +128,20 @@ export const FormContent = styled.form`
             &:hover {
                 background-color: ${({ theme }) => darken(0.15, theme.secondary)};
                 border-bottom: 5px solid ${({ theme }) => darken(0.25, theme.secondary)};
+            }
+        }
+
+        @media screen and (max-width: 720px){
+            flex-direction: column;
+
+            p {
+                max-width: 90%;
+
+            }
+            button {
+                width: 90%;
+                margin-left: 0;
+                margin-top: 2rem;
             }
         }
     }

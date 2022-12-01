@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DepoimentsContainer = styled.section`
     max-width: 1300px;
-    width: 100%;
+    width: 95%;
     margin: 0 auto 6.87rem;
     background-color: ${({theme}) => theme.secondary};
     border-radius: 20px;
@@ -18,6 +18,34 @@ export const DepoimentsContainer = styled.section`
             font-family: 'Saira', sans-serif;
             line-height: 25px;
             margin-left: 1rem;
+        }
+    }
+
+    .swiper-wrapper {
+        align-items: center;
+    }
+
+    .depo_tablet {
+        display: none;
+    }
+    .depo_mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 980px){
+        .depo_desk {
+            display: none;   
+        }
+        .depo_tablet {
+            display: block;
+        }
+    }
+    @media screen and (max-width: 660px){
+        .depo_tablet {
+            display: none;   
+        }
+        .depo_mobile {
+            display: block;
         }
     }
 `;
@@ -56,15 +84,23 @@ export const DepoimentCard = styled.div`
         }
     }
     .depo__img {
-        width: 145px;
-        height: 145px;
+        width: 120px;
+        height: 120px;
         position: absolute;
         z-index: 2;
-        right: -40px;
+        right: -20px;
         top: 75%;
 
         span {
             border-radius: 50%;
+        }
+    }
+
+    @media screen and (max-width: 660px){
+        max-width: unset;
+        
+        .depo__img {
+            right: 20px;
         }
     }
 `;

@@ -51,4 +51,25 @@ export const CareerCard = styled.div`
             margin-left: auto;
         }
     }
+
+    @media screen and (max-width: 980px){
+        flex-direction: column;
+        position: relative;
+        max-width: 580px;
+        width: 100%;
+        padding: 1.5rem;
+
+        .career__card__img {
+            display: none;
+        }
+        .career__card__txt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                margin-left: unset;
+            }
+        }
+    }
 `;

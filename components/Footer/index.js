@@ -52,17 +52,14 @@ function Footer() {
             </div>
             <div className='footer__top__col4'>
                 <Link href="/">
-                    <a>Unidades <br/>São Paulo</a>
+                    <a>Unidades <br/>Cuiabá</a>
                 </Link>
-                <Link href="/">
-                    <a>Unidades <br/>Minas Gerais</a>
-                </Link>
-                <Link href="/">
-                    <a>Unidades <br/>Paraná</a>
-                </Link>
-                <Link href="/">
-                    <a>Encontre <br/>a Unidade<br/> mais próxima</a>
-                </Link>
+                <a href="https://www.londrinacebrac.com.br/">
+                    Unidades <br/>Londrina
+                </a>
+                <a href="https://www.cebraconline.com.br/">
+                    Unidades <br/>Montes Claros
+                </a>
             </div>
             <div className='footer__top__col5'>
                 <p>Siga nossas redes</p>

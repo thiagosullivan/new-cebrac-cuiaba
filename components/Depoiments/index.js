@@ -16,7 +16,7 @@ function Depoiments({depos}) {
             <Image src={LogoCebrac} alt="Logo Cebrac"/>
             <h2>Quem conhece, <br/>confia</h2>
         </div>
-        <div>
+        <div className='depo_desk'>
             <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
@@ -45,6 +45,65 @@ function Depoiments({depos}) {
                 })}
             </Swiper>
         </div>
+        <div className='depo_tablet'>
+            <Swiper
+                slidesPerView={2}
+                spaceBetween={30}
+                pagination={{
+                    clickable: true
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+            >
+                {depos.map ((depo, index) => {
+                    return (
+                        <SwiperSlide key={index}>
+                            <DepoimentCard>
+                                <p>&#8243;{depo.depotxt}&#8243;</p>
+                                <div className='depo__bottom'>
+                                    <h4>{depo.deponame}</h4>
+                                    <span>{depo.deporole}</span>
+                                </div>
+                                <div className='depo__img'>
+                                    <Image src={depo.depoimg.url} alt={depo.deponame} layout="fill" />
+                                </div>
+                            </DepoimentCard>
+                        </SwiperSlide>
+                    )
+                })}
+            </Swiper>
+        </div>
+        <div className='depo_mobile'>
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={30}
+                pagination={{
+                    clickable: true
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+            >
+                {depos.map ((depo, index) => {
+                    return (
+                        <SwiperSlide key={index}>
+                            <DepoimentCard>
+                                <p>&#8243;{depo.depotxt}&#8243;</p>
+                                <div className='depo__bottom'>
+                                    <h4>{depo.deponame}</h4>
+                                    <span>{depo.deporole}</span>
+                                </div>
+                                <div className='depo__img'>
+                                    <Image src={depo.depoimg.url} alt={depo.deponame} layout="fill" />
+                                </div>
+                            </DepoimentCard>
+                        </SwiperSlide>
+                    )
+                })}
+            </Swiper>
+        </div>
+
         
     </DepoimentsContainer>
   )
