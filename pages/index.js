@@ -8,7 +8,13 @@ import Depoiments from '../components/Depoiments';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
 
-export default function Home() {
+// import { getClient } from '../lib/sanity.server';
+// import groq from 'groq';
+import { getAllDepo } from '../lib/dato-cms';
+
+export default function Home({ depos }) {
+  console.log(depos, 'depos')
+
   return (
     <div>
       <Head>
@@ -19,12 +25,23 @@ export default function Home() {
         <BannerHero />
         <WhoWeDo />
         <Careers />
-        <CloseToYou />
-        <Depoiments />
+        {/* <CloseToYou /> */}
+        <Depoiments depos={depos} />
         <Form />
         <div className='home__bg'></div>
       </main>
       <Footer />
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+  const depos = await getAllDepo();
+
+  return {
+    props: {
+      depos: depos || []
+    },
+    revalidate: 5,
+  }
 }

@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { BiSearch } from 'react-icons/bi';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import { DropDownHeader, HeaderBottom, HeaderContainer, HeaderTop, SearchHeader } from './style';
-import LogoHeader from '../../assets/cebrac-logo.webp';
+import LogoHeader from '../../assets/cebrac-logo-2.png';
 
 function Header() {
   return (
@@ -13,11 +13,16 @@ function Header() {
         <HeaderTop>
             <div className='header__content'>
                 <p>Ainda não é aluno?</p>
-                <a className='header__btn__wpp' href="https://google.com.br">
+                <a
+                    className='header__btn__wpp'
+                    href="http://api.whatsapp.com/send?1=pt_BR&phone=5565992049504"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
                     <FaWhatsapp />
                     Inscreva-se pelo Whats
                 </a>
-                <Link href="/">
+                <Link href="/#form">
                     Increva-se pelo site
                 </Link>
             </div>
@@ -25,7 +30,7 @@ function Header() {
         <HeaderBottom>
             <div className='header__content'>
                 <Link href="/">
-                    <Image src={LogoHeader} alt="Logo Header" width={151} height={42} />
+                    <Image src={LogoHeader} alt="Logo Header" width={180} height={90} />
                 </Link>
                 <nav>
                     <ul>
@@ -52,13 +57,13 @@ function Header() {
                                 </ul>
                             </nav>
                         </li>
-                        <li><Link href="/">Blog</Link></li>
-                        <li><Link href="/">Proz Empresas</Link></li>
-                        <li><Link href="/">Proz Saúde</Link></li>
+                        <li><Link href="/blog">Blog</Link></li>
+                        {/* <li><Link href="/">Proz Empresas</Link></li>
+                        <li><Link href="/">Proz Saúde</Link></li> */}
                     </ul>
-                    <SearchHeader>
+                    {/* <SearchHeader>
                         <BiSearch />
-                    </SearchHeader>
+                    </SearchHeader> */}
                 </nav>
             </div>
         </HeaderBottom>
