@@ -7,6 +7,9 @@ export const FormContainer = styled.section`
     max-width: 950px;
     width: 100%;
     margin: 0 auto 3rem;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
 
     h3 {
         text-align: center;
