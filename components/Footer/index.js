@@ -9,11 +9,16 @@ function Footer() {
         <div className='footer__top'>
             <div className='footer__top__col1'>
                 <p>Ainda não é aluno? <br/> Inscreva-se</p>
-                <a className='header__btn__wpp' href="https://google.com.br">
+                <a
+                    className='header__btn__wpp'
+                    href="http://api.whatsapp.com/send?1=pt_BR&phone=5565992049504"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
                     <FaWhatsapp />
                     Pelo Whats
                 </a>
-                <Link href="/">
+                <Link href="/#form">
                     Pelo site
                 </Link>
             </div>
@@ -23,7 +28,7 @@ function Footer() {
                     <Link href="/">
                         Quem Somos
                     </Link>
-                    <Link href="/">
+                    <Link href="/blog">
                         Blog
                     </Link>
 
@@ -61,13 +66,17 @@ function Footer() {
             </div>
             <div className='footer__top__col5'>
                 <p>Siga nossas redes</p>
-                <a href="https://google.com.br">
+                <a href="https://www.facebook.com/cebrac.unidadecuiaba/">
                     <FaFacebookSquare />
                 </a>
-                <a href="https://google.com.br">
+                <a href="https://www.instagram.com/cebrac.cuiaba/">
                     <FaInstagramSquare />
                 </a>
-                <a href="https://google.com.br">
+                <a
+                    href="http://api.whatsapp.com/send?1=pt_BR&phone=5565992049504"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
                     <FaWhatsappSquare />
                 </a>
             </div>
