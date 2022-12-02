@@ -4,7 +4,7 @@ export const BannerHeroContainer = styled.section`
     display: flex;
     justify-content: center;
     margin: 3.65rem auto 0;
-    background: url('https://raw.githubusercontent.com/thiagosullivan/new-cebrac-cuiaba/main/assets/bg-1.png');
+    background: url('https://raw.githubusercontent.com/thiagosullivan/new-cebrac-cuiaba/main/assets/bg-1.1.png');
     background-repeat-y: no-repeat;
     background-position: 0 50%;
     background-size: 214px;

@@ -89,7 +89,7 @@ export const DepoimentCard = styled.div`
         position: absolute;
         z-index: 2;
         right: -20px;
-        top: 75%;
+        top: 83%;
 
         span {
             border-radius: 50%;

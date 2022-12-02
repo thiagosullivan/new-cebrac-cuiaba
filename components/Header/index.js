@@ -65,8 +65,8 @@ function Header() {
                             <nav>
                                 <ul>
                                     <li><Link href="/">Cuiabá</Link></li>
-                                    <li><Link href="/">Londrina</Link></li>
-                                    <li><Link href="/">Montes Claros</Link></li>
+                                    <li><a href="https://www.londrinacebrac.com.br/">Londrina</a></li>
+                                    <li><a href="https://www.cebraconline.com.br/">Montes Claros</a></li>
                                 </ul>
                             </nav>
                         </li>
