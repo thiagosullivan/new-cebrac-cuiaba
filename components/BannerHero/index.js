@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import BannerHeroImg from '../../assets/banner-hero.jpg';
 import BannerHeroOne from '../../assets/banner-01.jpg';
 import BannerHeroTwo from '../../assets/banner-02.jpeg';
 import BannerHeroThree from '../../assets/banner-03.jpg';
