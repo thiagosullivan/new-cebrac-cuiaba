@@ -7,7 +7,7 @@ import PostBlogContent from '../../components/PostBlogContent';
 
 export default function Blog({post}) {
 
-  console.log(post, 'publicação')
+  // console.log(post, 'publicação')
   return (
     <div>
       <Head>

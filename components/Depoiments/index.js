@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, {useRef, useState} from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
-import LogoCebrac from '../../assets/cebrac-logo.webp';
+import LogoCebrac from '../../assets/cebrac-logo-2.png';
 import data from './data.json';
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,8 +13,8 @@ function Depoiments({depos}) {
   return (
     <DepoimentsContainer>
         <div className='close__title'>
-            <Image src={LogoCebrac} alt="Logo Cebrac"/>
-            <h2>Quem conhece, <br/>confia</h2>
+            <Image src={LogoCebrac} alt="Logo Cebrac" width={220} height={108}/>
+            <h2>Quem conhece, <br/>confia.</h2>
         </div>
         <div className='depo_desk'>
             <Swiper

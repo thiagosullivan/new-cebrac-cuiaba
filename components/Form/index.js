@@ -15,7 +15,7 @@ function Form() {
     const [ curso, setCurso ] = useState('');
     const [ loading, setLoading ] = useState(false);
 
-    console.log(nome, email, phone, unidade, curso)
+    // console.log(nome, email, phone, unidade, curso)
 
     async function handleSubmit(event){
         event.preventDefault();
@@ -117,7 +117,7 @@ function Form() {
                 </label>
             </div>
             <div>
-                <p>Declaro que li e concordo com a política de privacidade, bem como com o tratamento dos meus dados para fins de prospecção dos serviços educacionais prestados pela Proz Educação e demais instituições de ensino do mesmo grupo econômico.</p>
+                <p>Declaro que li e concordo com a política de privacidade, bem como com o tratamento dos meus dados para fins de prospecção dos serviços educacionais prestados pelo Cebrac e demais instituições de ensino do mesmo grupo econômico.</p>
                 <button type="submit">Enviar</button>
             </div>
         </FormContent>

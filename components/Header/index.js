@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import useScrollBlock from '../../hook/pageScroll';
 import { FaWhatsapp } from "react-icons/fa";
 import { BiSearch } from 'react-icons/bi';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
@@ -12,8 +13,15 @@ import { DropDownHeader, HeaderBottom, HeaderContainer, HeaderMobileBottom, Head
 function Header() {
 
     const [showMenuMobile, setShowMenuMobile] = useState(false);
+    const [blockScroll, allowScroll] = useScrollBlock();
 
-    console.log(showMenuMobile)
+    if(showMenuMobile == true){
+        blockScroll();
+    } else {
+        allowScroll();
+    }
+
+    // console.log(showMenuMobile)
 
   return (
     <HeaderContainer>
@@ -53,9 +61,21 @@ function Header() {
                             <RiArrowDropDownLine />
                             <nav>
                                 <ul>
-                                    <li><Link href="/">Cursos Técnicos</Link></li>
-                                    <li><Link href="/">Cursos de Capacitação</Link></li>
-                                    <li><Link href="/">Cursos de Aprimoramento</Link></li>
+                                <li>
+                                        <Link href="/#saude">Trilha de Saúde</Link>                                    
+                                    </li>
+                                    <li>
+                                        <Link href="/#empresas">Trilha de Empresas</Link>                                    
+                                    </li>
+                                    <li>
+                                        <Link href="/#idiomas">Trilha de Idiomas</Link>                                    
+                                    </li>
+                                    <li>
+                                        <Link href="/#tecnologias">Trilha de Tecnologias</Link>                                    
+                                    </li>
+                                    <li>
+                                        <Link href="/#beleza">Trilha da Beleza</Link>
+                                    </li>
                                 </ul>
                             </nav>
                         </li>
@@ -97,14 +117,26 @@ function Header() {
                         <AiOutlineClose />
                     </div>
                     <ul>
-                        <li><Link href="/">Quem Somos</Link></li>
+                        <li onClick={() => setShowMenuMobile(false)}><Link href="/">Quem Somos</Link></li>
                         <li>
                             Cursos
                             <div>
                                 <ul>
-                                    <li><Link href="/">Cursos Técnicos</Link></li>
-                                    <li><Link href="/">Cursos de Capacitação</Link></li>
-                                    <li><Link href="/">Cursos de Aprimoramento</Link></li>
+                                    <li onClick={() => setShowMenuMobile(false)}>
+                                        <Link href="/#saude">Trilha de Saúde</Link>
+                                    </li>
+                                    <li onClick={() => setShowMenuMobile(false)}>
+                                        <Link href="/#empresas">Trilha de Empresas</Link>
+                                    </li>
+                                    <li onClick={() => setShowMenuMobile(false)}>
+                                        <Link href="/#idiomas">Trilha de Idiomas</Link>
+                                    </li>
+                                    <li onClick={() => setShowMenuMobile(false)}>
+                                        <Link href="/#tecnologias">Trilha de Tecnologias</Link>
+                                    </li>
+                                    <li onClick={() => setShowMenuMobile(false)}>
+                                        <Link href="/#beleza">Trilha da Beleza</Link>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -112,9 +144,9 @@ function Header() {
                             Unidades
                             <div>
                                 <ul>
-                                    <li><Link href="/">Cuiabá</Link></li>
-                                    <li><a href="https://www.londrinacebrac.com.br/">Londrina</a></li>
-                                    <li><a href="https://www.cebraconline.com.br/">Montes Claros</a></li>
+                                    <li onClick={() => setShowMenuMobile(false)}><Link href="/">Cuiabá</Link></li>
+                                    <li onClick={() => setShowMenuMobile(false)}><a href="https://www.londrinacebrac.com.br/">Londrina</a></li>
+                                    <li onClick={() => setShowMenuMobile(false)}><a href="https://www.cebraconline.com.br/">Montes Claros</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -127,7 +159,22 @@ function Header() {
                                 CebraCast
                             </a>
                         </li>
-                        <li><Link href="/blog">Blog</Link></li>
+                        <li onClick={() => setShowMenuMobile(false)}><Link href="/blog">Blog</Link></li>
+                        <div className='header__mobile_social'>
+                            <a
+                                href="http://api.whatsapp.com/send?1=pt_BR&phone=5565992049504"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                onClick={() => setShowMenuMobile(false)}
+                            >
+                                Inscreva-se pelo Whats
+                            </a>
+                            <div onClick={() => setShowMenuMobile(false)}>
+                                <Link href="/#form">
+                                    Increva-se pelo site
+                                </Link>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
             </div>

@@ -19,6 +19,7 @@ export const CareerCard = styled.div`
     border: 3px solid ${({theme}) => theme.primary};
     margin-bottom: 2rem;
     border-radius: 20px;
+    padding: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,6 +27,12 @@ export const CareerCard = styled.div`
 
     .career__card__img {
         margin-left: -50px;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        display: block;
+        border-radius: 20px;
+        overflow: hidden;
     }
     .career__card__txt {
         max-width: 580px;

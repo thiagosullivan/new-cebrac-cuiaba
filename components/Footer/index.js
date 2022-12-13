@@ -23,7 +23,7 @@ function Footer() {
                 </Link>
             </div>
             <div className='footer__top__col2'>
-                <p>A Proz</p>
+                <p>O Cebrac</p>
                 <div>
                     <Link href="/quem-somos">
                         Quem Somos
@@ -33,7 +33,7 @@ function Footer() {
                     </Link>
 
                     <Link href="/">
-                        Canal de Ética
+                        Política de Privacidade
                     </Link>
                     <Link href="/">
                         Trabalhe Conosco
@@ -41,24 +41,24 @@ function Footer() {
                 </div>
             </div>
             <div className='footer__top__col3'>
-                <p>Cursos Técnicos</p>
+                <p>Cursos/Trilhas de desenvolvimento</p>
                 <div>
-                    <Link href="/">Área da Saúde</Link>
-                    <Link href="/">Área de Tecnologia</Link>
-                    <Link href="/">Área de Gestão</Link>
-                    <Link href="/">Cursos de Aprimoramento</Link>
-                    <Link href="/">Cursos de Capacitação</Link>
+                    <Link href="/#saude">Trilha de Saúde</Link>
+                    <Link href="/#empresas">Trilha de Empresas</Link>
+                    <Link href="/#idiomas">Trilha de Idiomas</Link>
+                    <Link href="/#tecnologias">Trilha de Tecnologias</Link>
+                    <Link href="/#beleza">Trilha da Beleza</Link>
                 </div>
             </div>
             <div className='footer__top__col4'>
                 <Link href="/">
-                    <a>Unidades <br/>Cuiabá</a>
+                    <a>Unidade <br/>Cuiabá</a>
                 </Link>
                 <a href="https://www.londrinacebrac.com.br/">
-                    Unidades <br/>Londrina
+                    Unidade <br/>Londrina
                 </a>
                 <a href="https://www.cebraconline.com.br/">
-                    Unidades <br/>Montes Claros
+                    Unidade <br/>Montes Claros
                 </a>
             </div>
             <div className='footer__top__col5'>

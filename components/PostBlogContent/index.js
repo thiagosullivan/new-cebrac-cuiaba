@@ -5,7 +5,7 @@ import { PostBlogContentContainer } from './style';
 
 function PostBlogContent({post}) {
     const str = post.videoYoutube
-    console.log(str, 'video')
+    // console.log(str, 'video')
 
     let mySubString
 

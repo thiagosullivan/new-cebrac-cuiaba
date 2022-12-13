@@ -54,4 +54,11 @@ export default createGlobalStyle`
     width: 100%;
     height: 91px;
   }
+
+  @media screen and (max-width: 980px){
+    .home__bg {
+      background-size: 80%;
+      height: 109px;
+    }
+  }
 `;
