@@ -117,7 +117,7 @@ function Header() {
                         <AiOutlineClose />
                     </div>
                     <ul>
-                        <li onClick={() => setShowMenuMobile(false)}><Link href="/">Quem Somos</Link></li>
+                        <li onClick={() => setShowMenuMobile(false)}><Link href="/quem-somos">Quem Somos</Link></li>
                         <li>
                             Cursos
                             <div>
