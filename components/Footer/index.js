@@ -32,7 +32,7 @@ function Footer() {
                         Blog
                     </Link>
 
-                    <Link href="/">
+                    <Link href="/politica-de-privacidade">
                         Política de Privacidade
                     </Link>
                     <Link href="/">

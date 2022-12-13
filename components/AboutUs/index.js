@@ -8,7 +8,7 @@ function AboutUs() {
     <AboutUsContainer>
         <h1>Quem Somos</h1>
         <div className='about__img'>
-          <Image src={AboutUsImg} alt="Cebrac" />
+          <Image src={AboutUsImg} alt="Cebrac" responsive/>
         </div>
         <div className='about__txt'>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed faucibus turpis in eu mi bibendum neque egestas. Et odio pellentesque diam volutpat commodo. In tellus integer feugiat scelerisque varius morbi. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Mattis aliquam faucibus purus in. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Vel pretium lectus quam id leo in vitae turpis massa. Enim praesent elementum facilisis leo vel fringilla. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Felis eget nunc lobortis mattis aliquam faucibus. Interdum varius sit amet mattis. Dapibus ultrices in iaculis nunc sed augue lacus. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Malesuada proin libero nunc consequat interdum varius. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Risus commodo viverra maecenas accumsan lacus vel.</p>
